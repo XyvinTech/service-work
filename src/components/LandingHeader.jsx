@@ -126,7 +126,7 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
             justifyContent="center"
             marginTop="20px"
           >
-            <Button variant="navbar" fullWidth={isMobile} color="primary">
+            <Button variant="navbar" fullWidth={isMobile} color="primary"onClick={() => router.push("https://www.workoindia.com")}>
               Get in Touch
             </Button>
           </Box>
