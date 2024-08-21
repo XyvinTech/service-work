@@ -12,19 +12,19 @@ const StyledInput = ({ placeholder, backgroundColor,onChange }) => {
           width: "100%",
           padding: "2px",
           backgroundColor:"#EBEBEB",
-          borderRadius: "8px",
+          borderRadius: "4px",
           "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "1px solid #EBEBEB",
+            border: "1px solid #EBEBEB",
           },
           "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#EBEBEB",
+            border: "1px solid #EBEBEB",
           },
           "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: "#EBEBEB",
+            border: "1px solid #EBEBEB",
           },
           "& .MuiInputBase-input": {
             color: backgroundColor ? "#000" : "#000",
-            padding: "14px",
+            padding: "14px", border: "1px solid #EBEBEB",
           },
         }}
       />

@@ -109,7 +109,7 @@ const LandingForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Grid container spacing={1} marginTop={1}>
+        <Grid container spacing={2} marginTop={1}>
           <Grid item xs={isMobile ? 12 : 12}>
             <Controller
               name="firstName"
@@ -293,7 +293,7 @@ const LandingForm = () => {
           </Grid>
         </Grid>{" "}
         <Stack justifyContent={"center"} direction={"row"} py={3}>
-          <Button fullWidth={isMobile} variant="navbar" type="submit">
+          <Button  variant="navbar" type="submit" fullWidth>
             Book your expert now
           </Button>
         </Stack>

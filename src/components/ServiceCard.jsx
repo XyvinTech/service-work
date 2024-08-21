@@ -16,7 +16,7 @@ const Card = styled.div`
     background-color: inherit;
   }
   @media (max-width: 600px) {
-    width: 170px;
+   
     height: 302px;
   }
 `;
@@ -31,11 +31,11 @@ const CardMediaWrapper = styled.div`
   height: 395px;
   overflow: hidden;
   @media (max-width: 600px) {
-    width: 160px;
+   
     height: 190px;
   }
   @media (max-width: 768px) {
-    width: 160px;
+    
     height: 190px;
   }
 `;

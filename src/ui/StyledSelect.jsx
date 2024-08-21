@@ -23,8 +23,8 @@ const StyledSelectField = ({
       width: "100%",
       padding: "8px",
       border: state.isFocused
-        ? "1px solid  var(--White-20, rgba(255, 255, 255, 0.20)) !important"
-        : "1px solid var(--White-20, rgba(255, 255, 255, 0.20));",
+        ? "none !important"
+        : "0px solid #EBEBEB",
       borderRadius: "4px",
       backgroundColor: "#EBEBEB",
       color: color || "#000",

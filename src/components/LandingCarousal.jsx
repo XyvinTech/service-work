@@ -22,16 +22,16 @@ function LandingCarousel({ images }) {
     slidesToShow: 12,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
+    speed: 5000,
     pauseOnHover: false,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 6,
-          slidesToScroll: 6,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           initialSlide: 2,
         },
       },
@@ -61,7 +61,7 @@ function LandingCarousel({ images }) {
         delivering efficient repairs, our team is committed to restoring your
         appliances to optimal performance.
       </Typography>
-      <div className="slider-container" style={{ overflow: "hidden" }}>
+      <div className="slider-container" style={{ overflow: "hidden", paddingTop: isMobile ? '30px' : '0px',  }}>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>

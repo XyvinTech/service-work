@@ -43,11 +43,11 @@ function StyledSlider() {
   const StyledSlider = styled(Slider)`
     .slick-slide {
       padding: 0 20px;
-            height: 700px; // Increased height for slides
+      height: 700px; 
 
       @media (max-width: 600px) {
         padding: 0 5px;
-         height: 400px;
+        height: 400px;
       }
     }
     .slick-prev,

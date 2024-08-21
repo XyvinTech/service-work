@@ -63,25 +63,28 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
       {" "}
       {isLand && (
         <Grid container spacing={2} paddingTop={isMobile ? 2 : 10}paddingLeft={2}>
-          <Grid item md={6}>
+          <Grid item md={7} >
             <Typography
               variant="h1"
               color={isLand ? "#fff" : "#000"}
-              textAlign={isLand ? "left" : isMobile ? "left" : "center"}
+              textAlign={ "left" }
               paddingTop={isMobile ? 0 : 10}
-              paddingBottom={isMobile ? 10 : 0}
-              px={isLand ? 10 : isMobile ? 2 : 20}
+              paddingBottom={isMobile ? 2 : 0}
+              paddingRight={ isMobile ? 4 : 20}
             >
               {title}
             </Typography>
+            <Typography variant="h5" color="#605F5E"paddingBottom={isMobile ? 2 : 0}>
+            Fast, Reliable Service for All Your Home Appliances
+          </Typography>
           </Grid>
           <Grid
             item
-            md={4}
+            md={3}
             xs={11}
             bgcolor={"white"}
-            paddingLeft={2}
-            paddingRight={2}
+            paddingLeft={3}
+            paddingRight={3}
             borderRadius={4}
             display="flex"
             justifyContent="center"

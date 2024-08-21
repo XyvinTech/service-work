@@ -29,7 +29,7 @@ const LandingService = ({ images }) => {
 
   return (
     <Box
-      paddingTop={isMobile ? 5 : 10}
+      paddingTop={isMobile ? 10 : 10}
       marginTop={isMobile ? 5 : 10}
       bgcolor={"#FEEFE4"}
       paddingBottom={10}
