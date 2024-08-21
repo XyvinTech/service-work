@@ -10,7 +10,7 @@ const StyledImg = styled.img`
   border: 1px solid rgba(238, 231, 231, 0.9);
   border-radius: 4px;
   @media (max-width: 768px) {
-    width: 260px;
+    width: 60px;
     height: auto;
   }
 `;
@@ -44,7 +44,7 @@ const LandingService = ({ images }) => {
         {images.map((image, index) => (
           <Grid
             item
-            xs={12}
+            xs={4}
             sm={6}
             md={2}
             key={index}

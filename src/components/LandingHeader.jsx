@@ -54,7 +54,7 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
         backgroundPosition: "center",
       }}
       height={
-        isMobile ? mobile || "510px" : isTablet ? "900px" : height || "680px"
+        isMobile ? mobile || "910px" : isTablet ? "900px" : height || "680px"
       }
       alignItems={isLand ? "left" : "center"}
       justifyContent={"center"}
@@ -62,20 +62,31 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
     >
       {" "}
       {isLand && (
-        <Grid container spacing={2} paddingTop={10} >
+        <Grid container spacing={2} paddingTop={isMobile ? 2 : 10}>
           <Grid item md={6}>
             <Typography
               variant="h1"
               color={isLand ? "#fff" : "#000"}
               textAlign={isLand ? "left" : isMobile ? "left" : "center"}
-              paddingTop={10}
-              //   width={isLand ? "52%" : "100%"}
+              paddingTop={isMobile ? 0 : 10}
+              paddingBottom={isMobile ? 10 : 0}
               px={isLand ? 10 : isMobile ? 2 : 20}
             >
               {title}
             </Typography>
           </Grid>
-          <Grid item md={4} bgcolor={'white'} paddingLeft={2} paddingRight={2} borderRadius={4}>
+          <Grid
+            item
+            md={4}
+            xs={11}
+            bgcolor={"white"}
+            paddingLeft={2}
+            paddingRight={2}
+            borderRadius={4}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
             <LandingForm />
           </Grid>
         </Grid>

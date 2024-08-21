@@ -47,6 +47,7 @@ function StyledSlider() {
 
       @media (max-width: 600px) {
         padding: 0 5px;
+         height: 400px;
       }
     }
     .slick-prev,

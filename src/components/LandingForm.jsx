@@ -106,7 +106,6 @@ const LandingForm = () => {
     reset();
     router.push("/thank");
   };
-  console.log(service);
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
