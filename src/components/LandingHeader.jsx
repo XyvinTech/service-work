@@ -62,7 +62,7 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
     >
       {" "}
       {isLand && (
-        <Grid container spacing={2} paddingTop={isMobile ? 2 : 10}>
+        <Grid container spacing={2} paddingTop={isMobile ? 2 : 10}paddingLeft={2}>
           <Grid item md={6}>
             <Typography
               variant="h1"
