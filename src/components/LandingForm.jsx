@@ -41,9 +41,18 @@ const LandingForm = () => {
     },
     { value: "Appliances Repair", label: "Appliances Repair" },
     { value: "Maintenance", label: "Maintenance" },
-    { value: "Hair Services", label: "Hair Services" },
-    { value: "Makeup Services", label: "Makeup Services" },
-    { value: "Spa Services", label: "Spa Services" },
+    { value: "Refrigerator Repair", label: "Refrigerator Repair" },
+    { value: "Refrigerator Servicing", label: "Refrigerator Servicing" },
+    { value: "Refrigerator Installation", label: "Refrigerator Installation" },
+    { value: "Geyser Repair", label: "Geyser Repair" },
+    { value: "Geyser Servicing", label: "Geyser Servicing" },
+    { value: "Geyser Installation", label: "Geyser Installation" },
+    { value: "Washing Machine Repair", label: "Washing Machine Repair" },
+    { value: "Washing Machine Servicing", label: "Washing Machine Servicing" },
+    {
+      value: "Washing Machine Installation",
+      label: "Washing Machine Installation",
+    },
     { value: "Networking Solutions", label: "Networking Solutions" },
     { value: "CCTV Installation", label: "CCTV Installation" },
     { value: "CCTV Monitoring", label: "CCTV Monitoring" },
@@ -82,7 +91,6 @@ const LandingForm = () => {
     } else {
       console.error("No courses selected.");
     }
- 
 
     try {
       const response = await fetch("/api/contact", {
@@ -293,7 +301,7 @@ const LandingForm = () => {
           </Grid>
         </Grid>{" "}
         <Stack justifyContent={"center"} direction={"row"} py={3}>
-          <Button  variant="navbar" type="submit" fullWidth>
+          <Button variant="navbar" type="submit" fullWidth>
             Book your expert now
           </Button>
         </Stack>

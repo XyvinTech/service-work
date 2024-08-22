@@ -73,15 +73,15 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
               variant="h1"
               color={isLand ? "#fff" : "#000"}
               textAlign={"left"}
-              paddingTop={isMobile ? 0 : 10}
+              paddingTop={isMobile ? 2 : 10}
               paddingBottom={isMobile ? 2 : 0}
               paddingRight={isMobile ? 4 : 20}
             >
               {title}
             </Typography>
             <Typography
-              variant="h5"
-              color="#605F5E"paddingRight={isMobile ? 0 : 10}
+              variant="h5" lineHeight={2}
+              color="#fff"paddingRight={isMobile ? 0 : 10}
               paddingBottom={isMobile ? 2 : 0}
             >
               Expert Services for AC, Refrigerator, Geyser, Washing Machine, and

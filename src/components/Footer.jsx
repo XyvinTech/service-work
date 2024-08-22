@@ -140,7 +140,6 @@ function Footer() {
             </Stack>
           </Stack>
         </Stack> */}
-       
       </Stack>
       {/* <Stack>
         <Typography
@@ -220,6 +219,24 @@ function Footer() {
         <Typography variant="copyrights">
           &copy; 2005-2024 Worko Private limited. All Rights Reserved
         </Typography>
+        <Stack direction={"row"} spacing={2}>
+          {" "}
+          <Link
+            href={"/privacy"}
+            passHref
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Typography variant="h9">Privacy policy</Typography>
+          </Link>
+          <Link
+            href={"/terms"}
+            passHref
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            {" "}
+            <Typography variant="h9">Terms & conditions</Typography>
+          </Link>
+        </Stack>
         <Typography variant="copyrights" color={"#908E8E"}>
           Handcrafted with ❤️ by Acute Angle
         </Typography>
