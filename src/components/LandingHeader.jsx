@@ -62,21 +62,32 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
     >
       {" "}
       {isLand && (
-        <Grid container spacing={2} paddingTop={isMobile ? 2 : 10}paddingLeft={2}>
-          <Grid item md={7} >
+        <Grid
+          container
+          spacing={2}
+          paddingTop={isMobile ? 2 : 10}
+          paddingLeft={2}
+        >
+          <Grid item md={7}>
             <Typography
               variant="h1"
               color={isLand ? "#fff" : "#000"}
-              textAlign={ "left" }
+              textAlign={"left"}
               paddingTop={isMobile ? 0 : 10}
               paddingBottom={isMobile ? 2 : 0}
-              paddingRight={ isMobile ? 4 : 20}
+              paddingRight={isMobile ? 4 : 20}
             >
               {title}
             </Typography>
-            <Typography variant="h5" color="#605F5E"paddingBottom={isMobile ? 2 : 0}>
-            Fast, Reliable Service for All Your Home Appliances
-          </Typography>
+            <Typography
+              variant="h5"
+              color="#605F5E"
+              paddingBottom={isMobile ? 2 : 0}
+            >
+              Expert Services for AC, Refrigerator, Geyser, Washing Machine, and
+              More. Repair, Installation, and Maintenance Service in the Comfort
+              of your Home.
+            </Typography>
           </Grid>
           <Grid
             item

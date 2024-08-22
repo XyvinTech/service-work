@@ -16,7 +16,6 @@ const Card = styled.div`
     background-color: inherit;
   }
   @media (max-width: 600px) {
-   
     height: 302px;
   }
 `;
@@ -31,11 +30,9 @@ const CardMediaWrapper = styled.div`
   height: 395px;
   overflow: hidden;
   @media (max-width: 600px) {
-   
     height: 190px;
   }
   @media (max-width: 768px) {
-    
     height: 190px;
   }
 `;
@@ -56,7 +53,7 @@ const CardContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: ${({ activeTab }) => (activeTab === 0 ? "30%" : "38%")};
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     height: ${({ activeTab }) => (activeTab === 0 ? "50%" : "60%")};
   }
 `;
@@ -69,9 +66,9 @@ const ServiceCard = ({ title, image, description, activeTab }) => {
   const setSelectedService = useServiceStore(
     (state) => state.setSelectedService
   );
-
   const handleBookNow = () => {
-    setSelectedService(title);
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <Card>
@@ -107,7 +104,7 @@ const ServiceCard = ({ title, image, description, activeTab }) => {
             </Typography>
           </ContentWrapper>
           <Link
-            href={"/contact"}
+            href={"#"}
             onClick={handleBookNow}
             passHref
             style={{ textDecoration: "none", color: "white" }}

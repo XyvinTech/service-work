@@ -26,35 +26,35 @@ const servicesData = [
       "Our comprehensive maintenance services keep your unit running efficiently saving you from unexpected breakdowns.",
   },
   {
-    title: "Hair Services",
-    image: "/Home/Services/7.webp",
-    description: "Indulge your hair with our expert hair care services. From stylish haircuts and colour treatments to nourishing deep conditioning treatments, we offer a range of options to revitalize your locks. Our skilled stylists will help you achieve the perfect hairstyle to complement your unique style."
-  },
-  {
-    title: "Makeup Services",
-    image: "/Home/Services/8.webp",
-    description: "Enhance your natural beauty with our professional makeup services. Our skilled artists create flawless looks tailored to your preferences, whether it's a natural everyday glow or a glamorous evening transformation. Let us help you look and feel your best for any occasion."
-  },
-  {
-    title: "Spa Services",
-    image: "/Home/Services/9.webp",
-    description: "Unwind and rejuvenate with our luxurious spa treatments. Let our skilled therapists transport you to pure bliss with soothing massages, invigorating body scrubs, and revitalising facials. Experience the ultimate relaxation and emerge feeling refreshed and renewed."
-  },
-  {
     title: "Networking Solutions",
     image: "/Home/Services/110.webp",
-    description: "Enhance your business operations with our robust networking solutions. From designing and installing efficient network infrastructures to providing reliable network support, we ensure seamless connectivity and optimal performance. Our experts optimize your network for speed, security, and scalability."
+    description:
+      "Enhance your business operations with our robust networking solutions. From designing and installing efficient network infrastructures to providing reliable network support, we ensure seamless connectivity and optimal performance. Our experts optimize your network for speed, security, and scalability.",
   },
   {
     title: "CCTV Installation",
     image: "/Home/Services/12.webp",
-    description: "Protect your property with our professional CCTV installation services. Our skilled technicians design and install customised surveillance systems tailored to your specific needs. From high-definition cameras to advanced recording equipment, we deliver top-notch security solutions."
+    description:
+      "Protect your property with our professional CCTV installation services. Our skilled technicians design and install customised surveillance systems tailored to your specific needs. From high-definition cameras to advanced recording equipment, we deliver top-notch security solutions.",
   },
   {
-    title: "CCTV Monitoring",
-    image: "/Home/Services/13.webp",
-    description: "Gain peace of mind with our comprehensive CCTV monitoring services. Our experienced operators vigilantly monitor your surveillance footage, detecting and responding to potential threats in real time. Benefit from increased security and rapid response times."
-  }
+    title: "Refrigerator Repair, Installation, and Servicing",
+    image: "/Home/Services/17.png",
+    description:
+      "Expert diagnostics and repairs for all major refrigerator brands.Swift and efficient service to restore your refrigerator's functionality.Transparent pricing with no hidden fees.",
+  },
+  {
+    title: "Geyser Repair, Installation, and Servicing",
+    image: "/Home/Services/15.png",
+    description:
+      "Professional installation of new geysers for efficient and safe hot water supply.Expert diagnostics and repairs to address any geyser issues promptly.Transparent pricing and upfront estimates.",
+  },
+  {
+    title: "Washing Machine Repair, Installation, and Servicing",
+    image: "/Home/Services/17.png",
+    description:
+      "Skilled technicians for expert installation of new washing machines.Swift and efficient repairs to resolve any washing machine problems.Transparent pricing and upfront estimates.",
+  },
   // Add more services as needed
 ];
 function StyledSlider() {
@@ -73,7 +73,7 @@ function StyledSlider() {
   const StyledSlider = styled(Slider)`
     .slick-slide {
       padding: 0 20px;
-      height: 700px; 
+      height: 700px;
 
       @media (max-width: 600px) {
         padding: 0 5px;
