@@ -86,154 +86,6 @@ function Footer() {
             New Delhi
           </Typography>
         </Box>
-        <Stack
-          direction={isMobile ? "column" : isTablet ? "column" : "row"}
-          spacing={isMobile ? 2 : 6}
-          p={isMobile ? 2 : 4}
-          gap={4}
-        >
-          <Stack direction={"row"} spacing={isTablet ? 4 : 11}>
-            <Stack spacing={2}>
-              <Typography
-                variant="footer_title"
-                fontWeight={isMobile ? 700 : 500}
-              >
-                Legal
-              </Typography>
-              <Link
-                href={"https://www.workoindia.com/contact"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Contact us
-                </Typography>
-              </Link>
-              <Link
-                href={"https://www.workoindia.com/privacy"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Privacy policy
-                </Typography>
-              </Link>{" "}
-              <Link
-                href={"https://www.workoindia.com/terms"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Terms & conditions
-                </Typography>
-              </Link>
-            </Stack>
-            <Stack spacing={2}>
-              <Typography
-                variant="footer_title"
-                fontWeight={isMobile ? 700 : 500}
-              >
-                Resources
-              </Typography>
-              {/* <Link href={"/blog"}  passHref style={{textDecoration:"none",color:"white"}}> */}
-              {/* <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                Blogs
-              </Typography> */}
-              {/* </Link> */}
-              <Link
-                href={"https://www.workoindia.com/enroll"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Enroll Now
-                </Typography>
-              </Link>
-              <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                Help centre
-              </Typography>
-            </Stack>
-          </Stack>{" "}
-          <Stack direction={"row"} spacing={isTablet ? 4 : 13}>
-            <Stack spacing={2}>
-              <Typography
-                variant="footer_title"
-                fontWeight={isMobile ? 700 : 500}
-              >
-                Discover
-              </Typography>
-              <Link
-                href={"https://www.workoindia.com/services"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Services
-                </Typography>
-              </Link>
-              <Link
-                href={"https://www.workoindia.com/skill"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Skill devlopment
-                </Typography>
-              </Link>
-            </Stack>
-            <Stack spacing={2}>
-              <Typography
-                variant="footer_title"
-                fontWeight={isMobile ? 700 : 500}
-              >
-                Company
-              </Typography>
-              <Link
-                href={"https://www.workoindia.com/about"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  About
-                </Typography>
-              </Link>
-
-              <Link
-                href={"https://www.workoindia.com/get-the-app"}
-                passHref
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                <Typography variant={isMobile ? "h7" : "footer_subtitle"}>
-                  Download App
-                </Typography>
-              </Link>
-            </Stack>
-          </Stack>
-        </Stack>
-      </Stack>
-      <Stack
-        direction={isMobile ? "column" : "row"}
-        px={isMobile ? 1 : 6}
-        py={1}
-        spacing={isMobile ? 5 : 10}
-        alignItems={"center"}
-        width={"100%"}
-        marginTop={isMobile ? 2 : 0}
-      >
-        <Stack spacing={2} width={isMobile ? "100%" : "55%"}>
-          <Typography variant="h5">Join our newsletter</Typography>
-          <Stack direction={"row"} spacing={2}>
-            <StyledInput
-              placeholder={"Email ID"}
-              backgroundColor={"background.paper"}
-            />
-            <Stack width={isMobile ? "49%" : "20%"}>
-              <Button variant="navbar" fullWidth>
-                Submit
-              </Button>
-            </Stack>
-          </Stack>
-        </Stack>
         <Stack width={isMobile ? "100%" : "55%"} pt={3} spacing={2}>
           <Typography style={styles.typography}>Need some Help?</Typography>
           <Typography
@@ -265,7 +117,32 @@ function Footer() {
           </Stack>
         </Stack>
       </Stack>
-      <Stack>
+      <Stack
+        direction={isMobile ? "column" : "row"}
+        px={isMobile ? 1 : 6}
+        py={1}
+        spacing={isMobile ? 5 : 10}
+        alignItems={"center"}
+        width={"100%"}
+        marginTop={isMobile ? 2 : 0}
+      >
+        {/* <Stack spacing={2} width={isMobile ? "100%" : "55%"}>
+          <Typography variant="h5">Join our newsletter</Typography>
+          <Stack direction={"row"} spacing={2}>
+            <StyledInput
+              placeholder={"Email ID"}
+              backgroundColor={"background.paper"}
+            />
+            <Stack width={isMobile ? "49%" : "20%"}>
+              <Button variant="navbar" fullWidth>
+                Submit
+              </Button>
+            </Stack>
+          </Stack>
+        </Stack> */}
+       
+      </Stack>
+      {/* <Stack>
         <Typography
           variant="h6"
           fontWeight={"400"}
@@ -331,7 +208,7 @@ function Footer() {
             </Typography>
           </Stack>
         </Stack>
-      </Stack>
+      </Stack> */}
       <Stack
         direction={isMobile ? "column" : "row"}
         justifyContent={isMobile ? "left" : "space-between"}

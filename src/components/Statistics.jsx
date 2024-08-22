@@ -3,35 +3,36 @@ import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { mont } from "@/theme";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import dummyData from "@/assets/json/DummyData";
 
 const Statistics = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://theworko.in/admin/tcapi_v1/website_dummy_data.php");
+        // const response = await axios.get("https://theworko.in/admin/tcapi_v1/website_dummy_data.php");
         // console.log("response", response.data.data);
-        setData(response.data.data);
+        setData(dummyData);
+        console.log("response", data);
       } catch (error) {
         console.error(error);
       }
     };
     fetchData();
-  }, []);
 
-  if (!data) {
-    return <Typography>    </Typography>;
-  }
+  
+  }, [dummyData]);
 
+  console.log("response", data);
   const statistics = [
-    { label: "Workers on Duty", value: data.workers_on_duty },
-    { label: "Jobs Completed", value: data.jobs_completed },
-    { label: "Locations", value: data.locations },
-    { label: "Happy Customers", value: data.happy_customers },
+    { label: "Workers on Duty", value: 5749 },
+    { label: "Jobs Completed", value: 44500 },
+    { label: "Locations", value: 8},
+    { label: "Happy Customers", value:39800 },
   ];
 
   return (
@@ -44,7 +45,7 @@ const Statistics = () => {
             color={"#FC8229"}
             fontFamily={mont.style.fontFamily}
           >
-            {stat.value}+
+           {stat.value}+
           </Typography>
           <Typography
             fontWeight={"500"}
