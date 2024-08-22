@@ -55,7 +55,6 @@ const servicesData = [
     description:
       "Skilled technicians for expert installation of new washing machines.Swift and efficient repairs to resolve any washing machine problems.Transparent pricing and upfront estimates.",
   },
-  // Add more services as needed
 ];
 function StyledSlider() {
   const [isPreviousClicked, setIsPreviousClicked] = useState(false);
