@@ -45,7 +45,10 @@ function LandingCarousel({ images }) {
       },
     ],
   };
-
+  const handleBookNow = () => {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <Typography
@@ -81,9 +84,9 @@ function LandingCarousel({ images }) {
           variant="navbar"
           fullWidth={isMobile}
           color="primary"
-          onClick={() => router.push("https://www.workoindia.com/enroll")}
+          onClick={handleBookNow}
         >
-          Enroll Now
+         Book Now
         </Button>
       </Box>
     </>
