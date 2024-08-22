@@ -11,14 +11,14 @@ const ReviewCarouselData = [
     title: "Ravi Ji",
     description:
       "Most cheapest price all home appliances and ac service And timely visit Partner behaviour good Jai shree Ram",
-    subheader: "January 6, 2024",
+    subheader: "June 6, 2024",
   },
   {
     image: "/AboutUs/Team1.webp",
     title: "Pankaj Chaudhary",
     description:
       "Super home service aap Worko se ac service affordable cost me hui Good partner Timely visit No over charge",
-    subheader: "January 6, 2024",
+    subheader: "July 6, 2024",
   },
   {
     image: "/AboutUs/Team3.webp",
@@ -39,7 +39,7 @@ const ReviewCarouselData = [
     title: "Ambhesh Sah",
     description:
       "Timely visit Cheapest price",
-    subheader: "January 6, 2024",
+    subheader: "February 6, 2024",
   },
   {
     image: "/images/Training2.jpg",
