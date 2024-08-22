@@ -120,7 +120,7 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
             running smoothly. If you need further assistance, we're always here
             to help!
           </Typography>{" "}
-          <Box
+          {/* <Box
             display="flex"
             alignItems="center"
             justifyContent="center"
@@ -129,7 +129,7 @@ function LandingHeader({ bgImg, title, isHome, height, mobile, top, isLand }) {
             <Button variant="navbar" fullWidth={isMobile} color="primary"onClick={() => router.push("https://www.workoindia.com")}>
               Get in Touch
             </Button>
-          </Box>
+          </Box> */}
         </Stack>
       )}
     </Stack>
