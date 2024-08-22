@@ -67,41 +67,41 @@ const LandingForm = () => {
 
   const router = useRouter();
   const onSubmit = async (data) => {
-    const formData = new FormData();
-    formData.append("name", data?.firstName + " " + data?.lastName);
-    formData.append("email", data?.email);
-    formData.append("phoneNumber", data?.phoneNumber);
-    formData.append("message", data?.description);
-    formData.append("state", data?.state?.label);
-    formData.append("service", service.label);
-    formData.append("district", data?.district?.label);
-    if (selectedCourse && selectedCourse.length > 0) {
-      selectedCourse.forEach((course) => {
-        formData.append("courses[]", course.label);
-      });
-    } else {
-      console.error("No courses selected.");
-    }
+    // const formData = new FormData();
+    // formData.append("name", data?.firstName + " " + data?.lastName);
+    // formData.append("email", data?.email);
+    // formData.append("phoneNumber", data?.phoneNumber);
+    // formData.append("message", data?.description);
+    // formData.append("state", data?.state?.label);
+    // formData.append("service", service.label);
+    // formData.append("district", data?.district?.label);
+    // if (selectedCourse && selectedCourse.length > 0) {
+    //   selectedCourse.forEach((course) => {
+    //     formData.append("courses[]", course.label);
+    //   });
+    // } else {
+    //   console.error("No courses selected.");
+    // }
  
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
+    // try {
+    //   const response = await fetch("/api/contact", {
+    //     method: "POST",
+    //     body: formData,
+    //   });
 
-      if (!response.ok) {
-        // console.log("falling over");
-        throw new Error(`response status: ${response.status}`);
-      }
+    //   if (!response.ok) {
+    //     // console.log("falling over");
+    //     throw new Error(`response status: ${response.status}`);
+    //   }
 
-      const responseData = await response.json();
-      // console.log(responseData.message);
-      // alert('Message successfully sent');
-    } catch (err) {
-      console.error(err);
-      // alert("Error, please try resubmitting the form");
-    }
+    //   const responseData = await response.json();
+    //   // console.log(responseData.message);
+    //   // alert('Message successfully sent');
+    // } catch (err) {
+    //   console.error(err);
+    //   // alert("Error, please try resubmitting the form");
+    // }
 
     reset();
     router.push("/thank");
