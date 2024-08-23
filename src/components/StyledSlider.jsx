@@ -51,7 +51,7 @@ const servicesData = [
   },
   {
     title: "Washing Machine Repair, Installation, and Servicing",
-    image: "/Home/Services/17.png",
+    image: "/Home/Services/16.png",
     description:
       "Skilled technicians for expert installation of new washing machines.Swift and efficient repairs to resolve any washing machine problems.Transparent pricing and upfront estimates.",
   },
